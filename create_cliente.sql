@@ -1,0 +1,12 @@
+CREATE TABLE Cliente (
+codigo INT PRIMARY KEY AUTO_INCREMENT,
+nombres VARCHAR(50) NOT NULL,
+apellidos VARCHAR(50) NOT NULL,
+telefono  VARCHAR(50) NOT NULL,
+direccion VARCHAR(100) NOT NULL,
+comuna VARCHAR(30) NOT NULL,
+email VARCHAR(100) NOT NULL,
+fecha_registro DATE NOT NULL
+);
+
+DESCRIBE Cliente;
