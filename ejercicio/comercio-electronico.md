@@ -33,7 +33,7 @@ CREATE TABLE compras (
   fecha DATE,
   cantidad INT,
   FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id),
-  FOREIGN KEY (producto_id) REFERENCES productos(productos_id)
+  FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
 );
 
 ```
