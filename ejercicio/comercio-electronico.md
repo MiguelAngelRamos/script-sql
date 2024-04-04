@@ -8,6 +8,8 @@ A lo largo del ejercicio, aprenderás cómo crear y gestionar usuarios, otorgarl
 ## Solución
 
 ```sql
+CREATE DATABASE sistema_comercio_electronico;
+USE sistema_comercio_electronico;
 
 CREATE TABLE clientes (
   cliente_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,7 +17,7 @@ CREATE TABLE clientes (
   correo_electronico VARCHAR(100),
   direccion VARCHAR(200),
   telefono VARCHAR(30)
-)
+);
 
 CREATE TABLE productos(
   producto_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -25,9 +27,13 @@ CREATE TABLE productos(
 );
 
 CREATE TABLE compras (
-
   compra_id INT AUTO_INCREMENT PRIMARY KEY,
-)
-
+  cliente_id INT,
+  producto_id INT, 
+  fecha DATE,
+  cantidad INT,
+  FOREIGN KEY (cliente_id) REFERENCES clientes(cliente_id),
+  FOREIGN KEY (producto_id) REFERENCES productos(productos_id)
+);
 
 ```
