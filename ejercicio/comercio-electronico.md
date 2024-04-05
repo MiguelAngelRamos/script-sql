@@ -36,4 +36,45 @@ CREATE TABLE compras (
   FOREIGN KEY (producto_id) REFERENCES productos(producto_id)
 );
 
+
+INSERT INTO clientes (nombre, correo_electronico, direccion, telefono) VALUES
+('Elon Musk', 'elonmusk@mail.com','calle imaginaria 001','1002003001'),
+('Bill Gates', 'billgates@mail.com','calle imaginaria 002','1002003002'),
+('Steve Jobs', 'stevejobs@mail.com','calle imaginaria 003','1002003003'),
+('Mark Zuckerberg', 'markzuckerberg@mail.com','calle imaginaria 004','1002003004'),
+('Jeff Bezos', 'jeffbezos@mail.com','calle imaginaria 005','1002003005'),
+('Larry Page', 'larrypage@mail.com','calle imaginaria 006','1002003006'),
+('Sergey Brin', 'sergeybrin@mail.com','calle imaginaria 007','1002003007'),
+('Tim Cook', 'timcook@mail.com','calle imaginaria 008', '1002003008'),
+('Sundar Pichai', 'sundarpichai@mail.com','calle imaginaria 009','1002003009'),
+('Sheryl Sandberg', 'sherylsandberg@mail.com','calle imaginaria 010','1002003010'),
+('Marissa Mayer', 'marissamayer@mail.com','calle imaginaria 011','1002003011'),
+('Susan Wojcicki', 'susanwojcicki@mail.com','calle imaginaria 012','1002003012'),
+('Satya Nadella', 'satyanadella@mail.com','calle imaginaria 013','1002003013'),
+('Jack Dorsey', 'jackdorsey@mail.com','calle imaginaria 014','1002003014'),
+('Reed Hastings', 'reedhastings@mail.com','calle imaginaria 015','1002003015');
+
+
+
+INSERT INTO productos (nombre, descripcion, precio) VALUES 
+('Notebook Modelo A','producto genial', 1200.00),
+('Notebook Modelo B','producto genial', 1500.00),
+('Tablet Modelo X','producto genial', 300.00),
+('Tablet Modelo Y','producto genial', 350.00),
+('Celular Modelo S','producto genial', 800.00),
+('Celular Modelo T','producto genial', 750.00),
+('Smartwatch Modelo Q','producto genial', 200.00),
+('Smartwatch Modelo R','producto genial', 250.00),
+('Cámara Digital Modelo G','producto genial', 500.00),
+('Cámara Digital Modelo H','producto genial', 450.00),
+('Auriculares Inalámbricos','producto genial', 100.00),
+('Teclado Inalámbrico','producto genial', 40.00),
+('Mouse Inalámbrico','producto genial', 30.00),
+('Monitor 27 Pulgadas','producto genial', 300.00),
+('Monitor 32 Pulgadas','producto genial', 400.00),
+('Impresora 3D Modelo D','producto genial', 700.00),
+('Impresora Láser Modelo F','producto genial', 250.00),
+('Router Inalámbrico','producto genial', 120.00),
+('Disco Duro Externo 1TB','producto genial', 80.00),
+('Memoria USB 128GB','producto genial', 25.00);
 ```
