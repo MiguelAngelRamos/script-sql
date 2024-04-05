@@ -101,4 +101,17 @@ INSERT INTO compras (cliente_id, producto_id, fecha, cantidad) VALUES
 (3, 3, '2024-02-04', 1),
 (4, 2, '2024-02-06', 1),
 (5, 1, '2024-02-08', 2);
+
+
+-- ANALISIS EXPLORATORIO
+-- Clientes con compras superiores a 1000 dolares
+-- Cm la tabla compras, C tabla cliente, P es la tabla Producto
+-- HAVING ES UN FILTRO
+SELECT C.nombre, SUM(P.precio * Cm.cantidad) AS total_gastado
+FROM compras Cm
+INNER JOIN clientes C  ON Cm.cliente_id = C.cliente_id
+INNER JOIN productos P ON Cm.producto_id = P.producto_id
+GROUP BY C.nombre
+HAVING total_gastado > 1000;
+
 ```
