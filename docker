@@ -1,0 +1,15 @@
+services:
+  jenkins:
+    restart: always
+    user: root
+    image: jenkins/jenkins
+    ports:
+      - 8080:8080
+      - 50000:50000
+    container_name: jenkins
+    volumes:
+      - /home/miguel/Documents/jenkins/jenkins_home:/var/jenkins_home
+    networks:
+      - net
+networks:
+  net:
